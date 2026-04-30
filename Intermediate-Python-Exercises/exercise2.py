@@ -1,4 +1,4 @@
-def exercise2(dict_a: dict[str,int], dict_b: [str,int]) -> dict[str,int]:
+def exercise2(dict_a: dict[str,int], dict_b: dict[str,int]) -> dict[str,int]:
     return {k: dict_a.get(k, 0) + dict_b.get(k, 0) \
             for k in set(dict_a) | set(dict_b)}
     #for k,v in dict_b.items():
