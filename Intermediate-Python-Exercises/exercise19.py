@@ -10,6 +10,6 @@ def exercise19(start_date: str, N: int) -> str:
             weekdays += 1
         delta += 1
         s += 1
-    return start_date + timedelta(days=delta)
+    return (start_date + timedelta(days=delta)).strftime("%A, %Y-%m-%d")
 if __name__ == "__main__":
     print(exercise19('2026-01-02', 5))
